@@ -4,7 +4,7 @@ import json
 from transformers import pipeline, AutoModelForSeq2SeqLM, AutoTokenizer
 
 # Crear la aplicación de Azure Functions
-app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
+app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
 # Modelos de traducción
 ModelosIdioma = {
